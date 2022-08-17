@@ -16,7 +16,7 @@ const getPrices = (stocks) => {
     stocks.map( (stock, i) => {
         setTimeout( () => {
             getPrice(stock)
-          }, 1000/31 * i) // limit : 30 req/sec
+          }, 1000/29.5 * i) // limit : 30 req/sec
         }
     )
 }
